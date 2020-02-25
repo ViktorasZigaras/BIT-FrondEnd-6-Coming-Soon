@@ -1,4 +1,91 @@
 
+.container > .header-row,
+.container > .body-row,
+.container > .footer-row {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+    .container.header {
+        background-color: deepskyblue;
+        padding-top: 50px;
+        background-image: url('../images/source.jpg');
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .container.body {
+        background-color: white;
+        padding: 50px;
+    }
+
+    .container.footer {
+        background-color: blue;
+        padding-bottom: 50px;
+    }
+
+    .container > .header-row {
+        display: inline-block;
+        width: 600px;
+        background-color: darkorange;
+    }
+
+    .container > .body-row {
+        display: inline-block;
+        width: 1000px;
+        background-color: darkseagreen;
+    }
+
+        .container > .body-row > .left {
+            float: left;
+            width: 50%;
+            background-color: red;
+        }
+
+        .container > .body-row > .right {
+            float: right;
+            width: 40%;
+            background-color: orange;
+        }
+
+    .container > .footer-row {
+        display: inline-block;
+        width: 800px;
+        background-color: darkviolet;
+    }
+
+@media (max-width: 1100px) {
+    .container > .body-row {
+        width: 800px;
+        background-color:black;
+        /* display: block; */
+    }
+}
+
+@media (max-width: 800px) {
+    .container > .body-row {
+        width: 600px;
+        background-color:grey;
+        /* display: block; */
+    }
+    /*optionally: override widths, heigths, paddings, margins where needed*/
+    .container > .body-row > .left,
+    .container > .body-row > .right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*top right bottom left, uses symmetry; padding, margin, radiuses*/
+
 
 
 
