@@ -38,7 +38,6 @@
         display: inline-block;
         width: 600px;
         background-color: darkorange;
-
         text-align: center;
     }
 
@@ -90,28 +89,52 @@
 
 /*top right bottom left, uses symmetry; padding, margin, radiuses*/
 
-.body h2 {
+.clock {
     display: inline-block;
     width: 100%;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 20px;
+    text-align: center;
+    padding: 20px;
+    /* padding: 20px 0; */
 }
 
-.body p {
-    display: inline-block;
-    width: 100%;
-    font-size: 16px;
-    line-height: 20px;
-    margin: 20px 0;
-    color: #bbb;
-}
+    .clock > .time {
+        /* display: inline-block; */
+        width: 25%;
+        float: left;
+        color: #fff;
+    }
 
-.body p > a {
-    color: red;
-    text-decoration: none;
-}
+        .clock > .time > .value {
+            display: inline-block;
+            width: 100%;
+            font-size: 32px;
+            line-height: 40px;
+            font-weight: bold;
+        }
 
+        .clock > .time > .label {
+            display: inline-block;
+            width: 100%;
+            font-size: 16px;
+            line-height: 20px;
+            font-size: 12px;
+            line-height: 15px;
+            /* text-transform: capitalize; */
+            text-transform: uppercase;
+        }
+
+@media (max-width: 1000px) {
+    .clock > .time {
+        /* display: inline-block; */
+        width: 50%;
+        /* float: left;
+        color: #fff; */
+    }
+
+    .clock > .time-padding-bottom {
+        margin-bottom: 20px;
+    }
+}
 
 
 
