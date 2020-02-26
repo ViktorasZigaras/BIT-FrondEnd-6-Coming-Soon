@@ -1,5 +1,5 @@
 
-.container > .header-row,
+/* .container > .header-row, */
 .container > .body-row,
 .container > .footer-row {
     position: absolute;
@@ -36,6 +36,9 @@
         display: inline-block;
         width: 600px;
         background-color: darkorange;
+        margin-left: 100px;
+
+        text-align: center;
     }
 
     .container > .body-row {
@@ -85,6 +88,9 @@
 }
 
 /*top right bottom left, uses symmetry; padding, margin, radiuses*/
+
+
+
 
 
 
