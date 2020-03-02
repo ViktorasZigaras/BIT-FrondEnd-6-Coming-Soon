@@ -21,6 +21,10 @@ form {
         /*min + max height + resize vertical*/
         line-height: 20px;
     }
+    form > input:focus {
+        /* border: none; */
+        outline-color: #488466;
+    }
 
 @media (min-width: 1000px) {
     form > input {
