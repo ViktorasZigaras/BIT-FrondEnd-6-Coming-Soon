@@ -35,3 +35,38 @@
         margin-bottom: 20px;
     }
 }
+
+
+
+
+:root {
+    --time: 39;
+}
+
+body {
+    counter-reset: seconds calc(var(--time)+100);
+}
+
+#seconds {
+    /* animation: clock-run 100s infinite; */
+    /* content: counter(seconds); */
+}
+
+#seconds::before {
+    /* animation: clock-run 1s infinite; */
+    content: counter(seconds);
+
+    /* localStorage. */
+}
+
+@keyframes clock-run {
+    0% {
+        counter-increment: seconds 1;
+        /* --time: 50; */
+        /* content: counter(seconds); */
+    }
+    100% {
+        /* counter-reset: seconds #seconds:valu; */
+        counter-reset: seconds calc(seconds+1);
+    }
+}
