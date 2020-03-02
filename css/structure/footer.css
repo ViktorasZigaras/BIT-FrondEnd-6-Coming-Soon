@@ -1,0 +1,85 @@
+.footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #FFF8;
+    line-height: 20px;
+    font-size: 18px;
+}
+    .footer .socials {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 2px solid #FFF;
+        padding: 10px 0;
+        margin-bottom: 30px;
+    }
+        .footer .socials > a {
+            display: inline-block;
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;
+            border-radius: 50%;
+            transition: all 2s;
+        }
+            .footer .socials > a:hover {
+                background-color: blanchedalmond;
+            }
+    .footer .footer-links {
+        display: inline-block;
+        width: 600px;
+        margin: 0 calc(50% - 600px);
+    }
+        .footer .footer-links > img {
+            display: inline-block;
+            margin: 30px 0;
+            width: 100%;
+            height: 50px;
+            object-fit: contain;
+        }
+        .footer .footer-links > .texts {
+            display: inline-block;
+            /* width: 100%; */
+        }
+
+            .footer .footer-links > .texts > div {
+                display: inline-block;
+                /* width: calc(100% /3); */
+                float: left;
+            }
+
+            .footer .footer-links > .texts > div:nth-last-child(2) {
+                border-left: 1px solid #FFF;
+                border-right: 1px solid #FFF;
+                padding: 0 10px;
+                margin: 0 10px;
+            }
+
+        .footer .footer-links > p {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+
+@media (max-width: 700px) {
+    .footer .footer-links {
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer .texts > div {
+        width: 100%;
+    }
+
+    .footer .texts > div:nth-last-child(2) {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+}
