@@ -44,11 +44,11 @@
 }
 
 body {
-    counter-reset: seconds calc(var(--time)+100);
+    counter-reset: seconds calc(var(--time));
 }
 
 #seconds {
-    /* animation: clock-run 100s infinite; */
+    animation: clock-run 1s infinite;
     /* content: counter(seconds); */
 }
 
@@ -65,6 +65,10 @@ body {
         /* --time: 50; */
         /* content: counter(seconds); */
     }
+    /* %
+    %
+    %
+    % */
     100% {
         /* counter-reset: seconds #seconds:valu; */
         counter-reset: seconds calc(seconds+1);

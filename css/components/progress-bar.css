@@ -1,7 +1,7 @@
 .progress-bar {
     display: inline-block;
     width: 100%;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     margin-bottom: 30px;
 }
 .progress-bar:last-of-type {
