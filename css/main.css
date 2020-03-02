@@ -48,6 +48,9 @@
             width: 40%;
             background-color: orange;
         }
+            .container form > .btn {
+                float: right;
+            }
     .container > .footer-row {
         display: inline-block;
         width: 800px;

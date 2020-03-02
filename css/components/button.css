@@ -1,0 +1,18 @@
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #EA1E63;
+    color: #FFF;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow: 0 2px 4px blueviolet;
+    /*x-px y-px blur-px zoom-px color:#aaa+opacity*/
+    transition: all 1.5s;
+}
+.btn:hover {
+    background-color: blueviolet;
+    box-shadow: 0 2px 6px 2px black;
+}
