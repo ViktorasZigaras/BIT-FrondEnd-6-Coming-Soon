@@ -43,13 +43,13 @@
             /* width: 100%; */
         }
 
-            .footer .footer-links > .texts > div {
+            .footer .texts > div {
                 display: inline-block;
                 /* width: calc(100% /3); */
                 float: left;
             }
 
-            .footer .footer-links > .texts > div:nth-last-child(2) {
+            .footer .texts > div:nth-last-child(2) {
                 border-left: 1px solid #FFF;
                 border-right: 1px solid #FFF;
                 padding: 0 10px;
@@ -59,13 +59,15 @@
         .footer .footer-links > p {
             display: inline-block;
             width: 100%;
+            line-height: 30px;
+            font-size: 16px;
+            margin-top: 20px;
         }
 
         .footer a {
             color: #FFF;
             text-decoration: none;
         }
-
 
 @media (max-width: 700px) {
     .footer .footer-links {
