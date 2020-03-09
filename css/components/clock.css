@@ -40,37 +40,66 @@
 
 
 :root {
-    --time: 39;
+    --secs: 39;
+    --mins: 37;
+    --hrs: 09;
 }
 
 body {
-    counter-reset: seconds calc(var(--time));
-}
-
-#seconds {
-    animation: clock-run 1s infinite;
-    /* content: counter(seconds); */
+    counter-reset: seconds var(--secs) minutes var(--mins) hours var(--hrs);
 }
 
 #seconds::before {
-    /* animation: clock-run 1s infinite; */
     content: counter(seconds);
-
-    /* localStorage. */
+    animation: seconds-run 1s infinite;
+}
+#minutes::before {
+    content: counter(minutes);
+    animation: minutes-run 2s infinite;
+}
+#hours::before {
+    content: counter(hours);
+    animation: hours-run 3s infinite;
 }
 
-@keyframes clock-run {
-    0% {
-        counter-increment: seconds 1;
-        /* --time: 50; */
-        /* content: counter(seconds); */
-    }
-    /* %
-    %
-    %
-    % */
-    100% {
-        /* counter-reset: seconds #seconds:valu; */
-        counter-reset: seconds calc(seconds+1);
-    }
+@keyframes seconds-run {
+    0% {counter-increment: seconds 1;}
+    10%{counter-increment: seconds 2;}
+    20% {counter-increment: seconds 3;}
+    30% {counter-increment: seconds 4;}
+    40% {counter-increment: seconds 5;}
+    50% {counter-increment: seconds 6;}
+    60% {counter-increment: seconds 7;}
+    70% {counter-increment: seconds 8;}
+    80% {counter-increment: seconds 9;}
+    90% {counter-increment: seconds 10;}
+    100% {}
+}
+
+@keyframes minutes-run {
+    0% {counter-increment: minutes 1;}
+    10%{counter-increment: minutes 2;}
+    20% {counter-increment: minutes 3;}
+    30% {counter-increment: minutes 4;}
+    40% {counter-increment: minutes 5;}
+    50% {counter-increment: minutes 6;}
+    60% {counter-increment: minutes 7;}
+    70% {counter-increment: minutes 8;}
+    80% {counter-increment: minutes 9;}
+    90% {counter-increment: minutes 10;}
+    100% {}
+}
+
+@keyframes hours-run {
+    0% {counter-increment: hours 1;}
+    10%{counter-increment: hours 2;}
+    20% {counter-increment: hours 3;}
+    30% {counter-increment: hours 4;}
+    40% {counter-increment: hours 5;}
+    50% {counter-increment: hours 6;}
+    60% {counter-increment: hours 7;}
+    70% {counter-increment: hours 8;}
+    80% {counter-increment: hours 9;}
+    90% {counter-increment: hours 10;}
+    100% {}
 }
